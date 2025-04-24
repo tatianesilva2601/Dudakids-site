@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Duda Kid's - Moda infantil com estilo e conforto para os pequenos. Roupas, calçados e muito mais em São José do Rio Preto." />
+  <title>Duda Kid's</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      margin: 0;
+      padding: 0;
+      color: #444;
+    }
+    header {
+      background: #f9a8d4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #fcd34d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .produto {
+      border: 1px solid #eee;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      width: 200px;
+      vertical-align: top;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background: #f9a8d4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .social-links {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #f472b6;
+    }
+    form {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    form button {
+      background: #f472b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .produto {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Duda Kid's</h1>
+    <p>Estilo e conforto para os pequenos com muito amor!</p>
+  </header>
+
+  <nav>
+    <a href="#roupas">Roupas</a>
+    <a href="#calcados">Calçados</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container" id="roupas">
+    <h2>Roupas Infantis</h2>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b" alt="Vestido Infantil Floral">
+      <p>Vestido Floral - R$ 59,90</p>
+    </div>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1601961360889-c04db1981b3d" alt="Conjunto Infantil Menino">
+      <p>Conjunto Menino - R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="container" id="calcados">
+    <h2>Calçados</h2>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1622831301257-0a68e5744a95" alt="Tênis Infantil Esportivo">
+      <p>Tênis Esportivo - R$ 69,90</p>
+    </div>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1600195077070-802c0f52b0f5" alt="Sandália Infantil Colorida">
+      <p>Sandália Colorida - R$ 39,90</p>
+    </div>
+  </div>
+
+  <div class="container" id="sobre">
+    <h2>Sobre nós</h2>
+    <p>Na Duda Kid's, acreditamos que toda criança merece se vestir com alegria e conforto. Cada peça é escolhida com carinho para trazer estilo e praticidade para o dia a dia dos pequenos.</p>
+  </div>
+
+  <div class="container" id="contato">
+    <h2>Contato</h2>
+    <p>Faça seu pedido pelo WhatsApp ou envie pelo formulário abaixo:</p>
+    <div class="social-links">
+      <a href="https://wa.me/5517992069059" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/dudakidsriopreto" target="_blank">Instagram</a>
+    </div>
+    <form action="https://formspree.io/f/mblojnqq" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="text" name="produto" placeholder="Produto desejado" required>
+      <textarea name="mensagem" placeholder="Mensagem adicional"></textarea>
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/5517992069059" target="_blank">WhatsApp</a>
+
+  <footer>
+    <p>&copy; 2025 Duda Kid's. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
